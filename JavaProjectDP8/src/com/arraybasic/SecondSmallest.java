@@ -1,13 +1,24 @@
 package com.arraybasic;
-//Print Array in Reverse order
+
 import java.util.Scanner;
-public class ReverseArray {
-	public static void showElements(int num[]) {
-		System.out.println("Array elements are");
-		for (int i=num.length-1; i>=0; i--) {
-			System.out.println(num[i]+ " ");
-			
+
+//13.	WAP to find the second smallest element in an array.
+public class SecondSmallest {
+	public static void secondSmallest(int n[]) {
+		int count=0;
+		int t=0;
+		for(int i=0; i<n.length; i++) {
+			 count=0;
+			for (int j=0; j<n.length; j++) {
+				if(i!=j && n[i]>n[j]) {
+					count++;
+					t=i;
+				}
+			}
+			if (count==1)
+				System.out.println("Second smallest number "+n[t]);
 		}
+
 	}
 	public static int [] createArray() {
 		int n[];
@@ -24,11 +35,10 @@ public class ReverseArray {
 		return n;
 		
 	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int k[]=createArray();
-		showElements(k);
+		secondSmallest(k);
 	}
 
 }
