@@ -1,5 +1,7 @@
 package com.arraybasic;
 
+import java.util.Arrays;
+
 public class Frequency {
 	public static void frequency() {
 		int arr[]= {1,2,2,2,3,4,4,4,4,1,1,6};
@@ -15,11 +17,13 @@ public class Frequency {
 					arr[j]='$';
 				}
 			}
+			
 			if (count==1)
 				System.out.println("Unique "+arr[i]+" ");
 			else if (count>1)
 				System.out.println("Element " + arr[i] + " Count " + count);
 		}
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

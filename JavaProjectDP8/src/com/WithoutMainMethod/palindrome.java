@@ -26,7 +26,7 @@ public class palindrome {
 		palindrome obj = new palindrome();
 		int res = obj.NumPalindrome(num);
 		System.out.println(res);
-		if (original == res)
+		if (original == res && res>0)
 			System.out.println("Number is palindrome");
 		else
 			System.out.println("Number is not palindrome");

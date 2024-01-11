@@ -1,17 +1,21 @@
 package com.Inheritance;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.Serializable;
+
 public class Employee {
 	int id;
 	double salary;
 	String name;
 	MyDate doj;
 	
-	Employee(){
+	 Employee(){
 		id=0;
 		salary=0;
 		name="";
 	}
-	Employee(int id, double salary, String name, MyDate d ){
+	 Employee(int id, double salary, String name, MyDate d ){
 		this.id=id;
 		this.salary=salary;
 		this.name=name;
@@ -50,7 +54,7 @@ public class Employee {
 		return " id " + id +"\n"+ " salary " + salary +"\n"+ " Date of joining " + doj;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException,ClassNotFoundException, IOException{
 		// TODO Auto-generated method stub
 		
 		Employee e1 = new Employee(1, 23000,"Suraj", new MyDate (12,3,2023));

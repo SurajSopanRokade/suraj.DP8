@@ -1,0 +1,11 @@
+package com.collection;
+import java.util.*;
+public class TestCollection2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		}
+	}
+
+

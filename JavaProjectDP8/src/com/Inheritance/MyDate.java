@@ -1,8 +1,8 @@
 package com.Inheritance;
 
+import java.io.Serializable;
 
-
-public class MyDate {
+public class MyDate implements Serializable{
 private int dd, mm, yy;
 	
 	MyDate()

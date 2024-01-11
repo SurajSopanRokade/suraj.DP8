@@ -3,7 +3,7 @@ package com.Covariant;
 public class Manager extends Employee{
 	int noofemp;
 	Manager(){
-		noofemp=0;
+		noofemp=24;
 	}
 	Manager(int eid, String name ){
 		super(eid, name);
@@ -11,6 +11,10 @@ public class Manager extends Employee{
 	}
 	public Manager getEmployee() {
 		return new Manager();
+	}
+	@Override
+	public String toString() {
+		return "Manager [noofemp=" + noofemp + "]";
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

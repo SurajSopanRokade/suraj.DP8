@@ -12,9 +12,9 @@ public class Duplicate1 {
 					//break out of the inner loop once a duplicate is
 				}
 			}
-			if (isDuplicate) {
-				System.out.println(num[i]);
-			}
+//			if (isDuplicate) {
+//				System.out.println(num[i]);
+//			}
 			if(isDuplicate) {
 				//check if the number has not been printed as a duplicate before
 				boolean isNotprinted = true; 
@@ -25,7 +25,7 @@ public class Duplicate1 {
 					}
 				}
 				if (isNotprinted)
-					System.out.println(num[i]+" is a duplicate");
+					System.out.println(num[i]+" is a duplicate" );
 			}
 		}
 	}

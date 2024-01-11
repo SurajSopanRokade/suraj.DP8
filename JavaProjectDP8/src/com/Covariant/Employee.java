@@ -1,6 +1,10 @@
 package com.Covariant;
 
 public class Employee {
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", name=" + name + "]";
+	}
 	int eid;
 	String name;
 	Employee(){
