@@ -3,11 +3,12 @@ package com.Array;
 public class Account {
 	private String accholdername;
 	private double balance, accno;
-
+	
 	Account() {
 		accholdername = "";
 		balance = 0;
 		accno = 0;
+		System.out.println(accno);
 	}
 
 	Account(String name, double balance, double accno) {
